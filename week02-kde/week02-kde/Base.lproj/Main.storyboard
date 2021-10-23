@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xxX-XK-p2J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--추가-->
+        <scene sceneID="ZGh-Ma-xxr">
+            <objects>
+                <viewController id="dBf-W9-yle" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYT-di-0ur">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U5h-8H-nLm"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="추가" image="plus" catalog="system" id="Agy-bK-Eo3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sra-l3-Taa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-248"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="NiR-Tz-V5h">
+            <objects>
+                <viewController id="mSA-Kt-Xpj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Tk-HX-dAK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xzf-pG-xFQ"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="nMN-81-JdH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imb-dU-OmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="461"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="nwO-ZH-KA1">
+            <objects>
+                <viewController id="LP0-D5-7uU" customClass="ViewController" customModule="week02_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nL9-qL-reB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAc-1E-G9U">
+                                <rect key="frame" x="40" y="84" width="25" height="24"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi9-PW-X9a">
+                                <rect key="frame" x="20" y="443" width="26" height="22"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOp-CK-w7f">
+                                <rect key="frame" x="66" y="443" width="28" height="25"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="message" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm2-Rx-Lg6">
+                                <rect key="frame" x="114" y="443" width="26" height="25"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="paperplane" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-5r-Z6r">
+                                <rect key="frame" x="360" y="84" width="24" height="22"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whaeundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-iE-E9C">
+                                <rect key="frame" x="75" y="84" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fke-1W-TbK">
+                                <rect key="frame" x="0.0" y="148" width="414" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="aP7-7C-v8x"/>
+                                    <constraint firstAttribute="height" constant="275" id="aaa-Gy-35n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whaeundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSR-Jv-WoM">
+                                <rect key="frame" x="25" y="498" width="74" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종강했으면 좋겠다!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEq-K6-ca7">
+                                <rect key="frame" x="129" y="498" width="109.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kAR-uZ-caI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rib-iE-E9C" firstAttribute="top" secondItem="kAR-uZ-caI" secondAttribute="top" constant="40" id="2gM-t7-dFy"/>
+                            <constraint firstItem="Pi9-PW-X9a" firstAttribute="top" secondItem="fke-1W-TbK" secondAttribute="bottom" constant="20" id="7UO-ke-oeW"/>
+                            <constraint firstItem="wOp-CK-w7f" firstAttribute="leading" secondItem="Pi9-PW-X9a" secondAttribute="trailing" constant="20" id="B72-dY-4RQ"/>
+                            <constraint firstItem="aEq-K6-ca7" firstAttribute="leading" secondItem="vSR-Jv-WoM" secondAttribute="trailing" constant="30" id="NlO-kc-8Ue"/>
+                            <constraint firstItem="eAc-1E-G9U" firstAttribute="top" secondItem="kAR-uZ-caI" secondAttribute="top" constant="40" id="O3W-yA-21i"/>
+                            <constraint firstItem="eAc-1E-G9U" firstAttribute="leading" secondItem="kAR-uZ-caI" secondAttribute="leading" constant="40" id="Ury-ao-roa"/>
+                            <constraint firstItem="wOp-CK-w7f" firstAttribute="top" secondItem="fke-1W-TbK" secondAttribute="bottom" constant="20" id="Wkg-ov-tzk"/>
+                            <constraint firstItem="vSR-Jv-WoM" firstAttribute="top" secondItem="wOp-CK-w7f" secondAttribute="bottom" constant="30" id="ZmU-lq-uKu"/>
+                            <constraint firstItem="aEq-K6-ca7" firstAttribute="top" secondItem="qm2-Rx-Lg6" secondAttribute="bottom" constant="30" id="chr-7W-lMo"/>
+                            <constraint firstItem="qm2-Rx-Lg6" firstAttribute="top" secondItem="fke-1W-TbK" secondAttribute="bottom" constant="20" id="df2-kM-6Ke"/>
+                            <constraint firstItem="qm2-Rx-Lg6" firstAttribute="leading" secondItem="wOp-CK-w7f" secondAttribute="trailing" constant="20" id="dtW-7h-reh"/>
+                            <constraint firstItem="D5y-5r-Z6r" firstAttribute="top" secondItem="kAR-uZ-caI" secondAttribute="top" constant="40" id="iIe-Ul-rIq"/>
+                            <constraint firstItem="fke-1W-TbK" firstAttribute="top" secondItem="eAc-1E-G9U" secondAttribute="bottom" constant="40" id="iZO-vz-PWx"/>
+                            <constraint firstItem="vSR-Jv-WoM" firstAttribute="leading" secondItem="kAR-uZ-caI" secondAttribute="leading" constant="25" id="s6P-zP-guh"/>
+                            <constraint firstItem="kAR-uZ-caI" firstAttribute="trailing" secondItem="D5y-5r-Z6r" secondAttribute="trailing" constant="30" id="sP6-ic-CBe"/>
+                            <constraint firstItem="fke-1W-TbK" firstAttribute="leading" secondItem="kAR-uZ-caI" secondAttribute="leading" id="xQ1-cT-fis"/>
+                            <constraint firstItem="Pi9-PW-X9a" firstAttribute="leading" secondItem="kAR-uZ-caI" secondAttribute="leading" constant="20" id="y1E-7H-jx7"/>
+                            <constraint firstItem="Rib-iE-E9C" firstAttribute="leading" secondItem="eAc-1E-G9U" secondAttribute="trailing" constant="10" id="yzY-Ug-U21"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="homekit" catalog="system" id="sBG-Zz-bQo"/>
+                    <connections>
+                        <outlet property="addButton" destination="D5y-5r-Z6r" id="UeS-3B-U6G"/>
+                        <outlet property="heartButton" destination="Pi9-PW-X9a" id="mlg-5G-RjP"/>
+                        <outlet property="instagramImageView" destination="fke-1W-TbK" id="sV1-Hr-SvH"/>
+                        <outlet property="messageButton" destination="wOp-CK-w7f" id="YfT-PW-mwn"/>
+                        <outlet property="shareButton" destination="qm2-Rx-Lg6" id="Gl6-hv-vl7"/>
+                        <outlet property="userId" destination="Rib-iE-E9C" id="ZUP-cD-jbJ"/>
+                        <outlet property="userImage" destination="eAc-1E-G9U" id="BkK-Je-tWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTI-rf-OKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="461"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Dd3-n4-o6c">
+            <objects>
+                <tabBarController id="xxX-XK-p2J" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qDr-zx-1DS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LP0-D5-7uU" kind="relationship" relationship="viewControllers" id="qEG-Oj-oSL"/>
+                        <segue destination="mSA-Kt-Xpj" kind="relationship" relationship="viewControllers" id="BR6-G2-OQt"/>
+                        <segue destination="dBf-W9-yle" kind="relationship" relationship="viewControllers" id="vgF-n1-C2w"/>
+                        <segue destination="e1t-Ze-UaA" kind="relationship" relationship="viewControllers" id="D6T-SD-S4s"/>
+                        <segue destination="jrI-IX-UQI" kind="relationship" relationship="viewControllers" id="A9A-gy-6FK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlM-PA-GHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="-247"/>
+        </scene>
+        <!--하트-->
+        <scene sceneID="7mt-Zp-Hhv">
+            <objects>
+                <viewController id="e1t-Ze-UaA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0iw-Tv-uQW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7aw-ro-qzH"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="하트" image="heart" catalog="system" id="mSx-2t-Ayd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cca-fk-Tvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="-248"/>
+        </scene>
+        <!--사용자-->
+        <scene sceneID="OZv-oh-VL0">
+            <objects>
+                <viewController id="jrI-IX-UQI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZL-hI-tmh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2v9-Sz-8pL"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="사용자" image="person" catalog="system" id="Ntj-aL-QPp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PwX-Gc-aSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

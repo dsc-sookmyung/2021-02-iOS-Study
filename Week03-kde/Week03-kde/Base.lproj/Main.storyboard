@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9hZ-bs-o9Q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HEQ-oW-xvv">
+            <objects>
+                <navigationController id="9hZ-bs-o9Q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u9g-1d-ot2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x8F-Di-m96"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRg-qu-nIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="39"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="ivi-qJ-cEb">
+            <objects>
+                <viewController storyboardIdentifier="DetailController" id="F5k-PC-AGS" customClass="DetailController" customModule="Week03_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4S-tD-V8W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH8-mG-OkD">
+                                <rect key="frame" x="20" y="130" width="94" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fH8-mG-OkD" secondAttribute="height" multiplier="1:1" id="8D5-c8-2ez"/>
+                                </constraints>
+                                <state key="normal" image="kakaoLogo.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡 KakaoTalk 상세페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-8i-rFh">
+                                <rect key="frame" x="136" y="139" width="243" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6d-QM-kLG">
+                                <rect key="frame" x="136" y="193.5" width="62" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X6d-QM-kLG" secondAttribute="height" multiplier="31:15" id="hjA-8n-odQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="받기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Click_moveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMX-aB-2z5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-6d-Lzd">
+                                <rect key="frame" x="91" y="293.5" width="233" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pbz-6d-Lzd" secondAttribute="height" multiplier="233:36" id="pZP-Yj-Khv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="back_moveBtn:" destination="F5k-PC-AGS" eventType="touchUpInside" id="vaJ-U4-cMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="byg-5o-EGJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbz-6d-Lzd" firstAttribute="top" secondItem="X6d-QM-kLG" secondAttribute="bottom" constant="70" id="4vp-fw-5ov"/>
+                            <constraint firstItem="byg-5o-EGJ" firstAttribute="trailing" secondItem="AvF-8i-rFh" secondAttribute="trailing" constant="35" id="61f-LQ-6Mx"/>
+                            <constraint firstItem="X6d-QM-kLG" firstAttribute="leading" secondItem="fH8-mG-OkD" secondAttribute="trailing" constant="22" id="Byi-Gd-XVU"/>
+                            <constraint firstItem="fH8-mG-OkD" firstAttribute="leading" secondItem="byg-5o-EGJ" secondAttribute="leading" constant="20" id="Fsu-6Y-WMn"/>
+                            <constraint firstItem="X6d-QM-kLG" firstAttribute="top" secondItem="AvF-8i-rFh" secondAttribute="bottom" constant="34" id="Q8g-rf-tFs"/>
+                            <constraint firstItem="byg-5o-EGJ" firstAttribute="trailing" secondItem="pbz-6d-Lzd" secondAttribute="trailing" constant="90" id="RjY-h4-dsZ"/>
+                            <constraint firstItem="byg-5o-EGJ" firstAttribute="trailing" secondItem="X6d-QM-kLG" secondAttribute="trailing" constant="216" id="YcR-hz-ADM"/>
+                            <constraint firstItem="AvF-8i-rFh" firstAttribute="leading" secondItem="fH8-mG-OkD" secondAttribute="trailing" constant="22" id="fBu-o9-HKD"/>
+                            <constraint firstItem="pbz-6d-Lzd" firstAttribute="leading" secondItem="byg-5o-EGJ" secondAttribute="leading" constant="91" id="iYK-OT-Cin"/>
+                            <constraint firstItem="fH8-mG-OkD" firstAttribute="top" secondItem="byg-5o-EGJ" secondAttribute="top" constant="86" id="lTS-qH-0zp"/>
+                            <constraint firstItem="byg-5o-EGJ" firstAttribute="trailing" secondItem="fH8-mG-OkD" secondAttribute="trailing" constant="300" id="mYh-U1-0ea"/>
+                            <constraint firstItem="AvF-8i-rFh" firstAttribute="top" secondItem="byg-5o-EGJ" secondAttribute="top" constant="95" id="neg-sl-dEJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uG1-W3-Rvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="701.78571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Week03_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10월 11일 월요일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYx-Op-Spv">
+                                <rect key="frame" x="33" y="123" width="115" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="투데이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4B-Hf-LIU">
+                                <rect key="frame" x="31" y="148.5" width="117" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seaImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Zcx-zh-2dz">
+                                <rect key="frame" x="20" y="210" width="374" height="253"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSg-W5-pIi">
+                                <rect key="frame" x="357" y="163" width="25" height="24"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mPA-UZ-giE" kind="presentation" id="eNX-Xi-9Or"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fw-EI-iuS">
+                                <rect key="frame" x="332" y="505" width="62" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="받기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Click_moveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aO0-qx-Y0D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-13-NH9">
+                                <rect key="frame" x="20" y="484" width="72" height="72"/>
+                                <state key="normal" image="kakaoLogo.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡 KakaoTalk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-uO-Nfg">
+                                <rect key="frame" x="122" y="478" width="143" height="85.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MOu-uO-Nfg" secondAttribute="trailing" constant="149" id="09b-Cx-6nC"/>
+                            <constraint firstItem="5fw-EI-iuS" firstAttribute="top" secondItem="Zcx-zh-2dz" secondAttribute="bottom" constant="42" id="28s-4C-3eH"/>
+                            <constraint firstItem="c4B-Hf-LIU" firstAttribute="top" secondItem="iYx-Op-Spv" secondAttribute="bottom" constant="5" id="4Qz-FU-9Xy"/>
+                            <constraint firstItem="5fw-EI-iuS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="332" id="4jD-m6-1Gn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5fw-EI-iuS" secondAttribute="trailing" constant="20" id="6em-Wq-xVT"/>
+                            <constraint firstItem="MOu-uO-Nfg" firstAttribute="leading" secondItem="bd0-13-NH9" secondAttribute="trailing" constant="30" id="7Tw-wq-HQN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Zcx-zh-2dz" secondAttribute="bottom" constant="399" id="CIV-xu-uBt"/>
+                            <constraint firstItem="MOu-uO-Nfg" firstAttribute="top" secondItem="Zcx-zh-2dz" secondAttribute="bottom" constant="15" id="DGE-u0-jXu"/>
+                            <constraint firstItem="bd0-13-NH9" firstAttribute="top" secondItem="Zcx-zh-2dz" secondAttribute="bottom" constant="21" id="Eh4-er-hcL"/>
+                            <constraint firstItem="wSg-W5-pIi" firstAttribute="leading" secondItem="c4B-Hf-LIU" secondAttribute="trailing" constant="209" id="LK8-lb-2br"/>
+                            <constraint firstItem="Zcx-zh-2dz" firstAttribute="top" secondItem="wSg-W5-pIi" secondAttribute="bottom" constant="23" id="PQs-HG-J0C"/>
+                            <constraint firstItem="wSg-W5-pIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="Qlu-H7-7XW"/>
+                            <constraint firstItem="bd0-13-NH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R5v-U0-BCV"/>
+                            <constraint firstItem="Zcx-zh-2dz" firstAttribute="top" secondItem="c4B-Hf-LIU" secondAttribute="bottom" constant="7.5" id="Rei-2W-ZGU"/>
+                            <constraint firstItem="c4B-Hf-LIU" firstAttribute="top" secondItem="iYx-Op-Spv" secondAttribute="bottom" constant="5" id="X8m-di-hIX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bd0-13-NH9" secondAttribute="bottom" constant="306" id="XNg-QF-4nl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zcx-zh-2dz" secondAttribute="trailing" constant="20" id="ZuS-B8-kR7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5fw-EI-iuS" secondAttribute="bottom" constant="327" id="dFV-uc-Hgs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iYx-Op-Spv" secondAttribute="trailing" constant="266" id="hvg-Ha-uG0"/>
+                            <constraint firstItem="iYx-Op-Spv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="iCK-op-kDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MOu-uO-Nfg" secondAttribute="bottom" constant="298.5" id="o3t-oE-Y7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wSg-W5-pIi" secondAttribute="trailing" constant="32" id="p3L-aa-Fkh"/>
+                            <constraint firstItem="Zcx-zh-2dz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="122" id="qwt-je-M4e"/>
+                            <constraint firstItem="iYx-Op-Spv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="rPF-Ab-DGm"/>
+                            <constraint firstItem="c4B-Hf-LIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="tOj-uD-MbF"/>
+                            <constraint firstItem="Zcx-zh-2dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v0O-95-NOK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A0y-0V-hOS"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="38.839285714285715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S2P-TU-K9g">
+            <objects>
+                <viewController id="mPA-UZ-giE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSY-hJ-Ubk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-Zf-gU9">
+                                <rect key="frame" x="185" y="147" width="44" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vLC-2I-I5a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZTa-Zf-gU9" firstAttribute="top" secondItem="vLC-2I-I5a" secondAttribute="top" constant="147" id="GJL-bL-dzw"/>
+                            <constraint firstItem="vLC-2I-I5a" firstAttribute="trailing" secondItem="ZTa-Zf-gU9" secondAttribute="trailing" constant="185" id="JL2-Da-Aiv"/>
+                            <constraint firstItem="ZTa-Zf-gU9" firstAttribute="leading" secondItem="vLC-2I-I5a" secondAttribute="leading" constant="185" id="aAj-PY-QlR"/>
+                            <constraint firstItem="vLC-2I-I5a" firstAttribute="bottom" secondItem="ZTa-Zf-gU9" secondAttribute="bottom" constant="631" id="czh-go-Mwd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMP-ZO-6uR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="39"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kakaoLogo.png" width="225" height="225"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="seaImage.jpeg" width="275" height="183"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
