@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-nT-o6w">
+                                <rect key="frame" x="-1" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                                <tabBar key="tableFooterView" opaque="NO" contentMode="scaleToFill" barStyle="black" id="Wsf-Fq-w9R">
+                                    <rect key="frame" x="0.0" y="179" width="414" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <items>
+                                        <tabBarItem title="세계 시계" image="globe" catalog="system" id="8kO-FN-gUx">
+                                            <imageReference key="selectedImage" image="globe" catalog="system" symbolScale="default"/>
+                                        </tabBarItem>
+                                        <tabBarItem title="알람" image="alarm.fill" catalog="system" selectedImage="alarm.fill" id="g6R-Yh-pl2"/>
+                                        <tabBarItem title="스톱워치" image="stopwatch.fill" catalog="system" selectedImage="stopwatch.fill" id="2aP-5W-8XQ"/>
+                                        <tabBarItem title="타이머" image="timer" catalog="system" selectedImage="timer" id="oFl-zS-E6k"/>
+                                    </items>
+                                    <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                                </tabBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="112" id="tR3-4P-by6" customClass="CustomTableViewCell" customModule="ios_alarm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="112"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tR3-4P-by6" id="p19-hi-QvX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wG-O9-hKH">
+                                                    <rect key="frame" x="22" y="41" width="69" height="48"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-yN-084">
+                                                    <rect key="frame" x="94" y="15.5" width="131" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkQ-0L-6Te">
+                                                    <rect key="frame" x="22" y="80" width="30" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vs-0h-wD5">
+                                                    <rect key="frame" x="340" y="36" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Vs-0h-wD5" firstAttribute="centerY" secondItem="VB4-yN-084" secondAttribute="centerY" id="0Ei-EM-jPS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9Vs-0h-wD5" secondAttribute="trailing" constant="5" id="8c3-yp-NeR"/>
+                                                <constraint firstItem="TkQ-0L-6Te" firstAttribute="leading" secondItem="p19-hi-QvX" secondAttribute="leadingMargin" constant="2" id="FtN-OH-4sy"/>
+                                                <constraint firstItem="9Vs-0h-wD5" firstAttribute="top" secondItem="p19-hi-QvX" secondAttribute="topMargin" constant="25" id="Ol8-Ot-ild"/>
+                                                <constraint firstItem="5wG-O9-hKH" firstAttribute="leading" secondItem="p19-hi-QvX" secondAttribute="leadingMargin" id="PTl-KY-wCw"/>
+                                                <constraint firstItem="VB4-yN-084" firstAttribute="leading" secondItem="5wG-O9-hKH" secondAttribute="trailing" constant="3" id="Xx2-Iz-Gnd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5wG-O9-hKH" secondAttribute="bottom" constant="12" id="dkB-eu-d9X"/>
+                                                <constraint firstItem="5wG-O9-hKH" firstAttribute="leading" secondItem="p19-hi-QvX" secondAttribute="leadingMargin" constant="2" id="gHc-Th-yqL"/>
+                                                <constraint firstItem="5wG-O9-hKH" firstAttribute="top" secondItem="p19-hi-QvX" secondAttribute="topMargin" constant="30" id="gah-WQ-VZ4"/>
+                                                <constraint firstItem="TkQ-0L-6Te" firstAttribute="bottom" secondItem="p19-hi-QvX" secondAttribute="bottomMargin" id="hLE-Yo-2RZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="5wG-O9-hKH" secondAttribute="bottom" constant="23" id="j0h-cF-AcK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5wG-O9-hKH" secondAttribute="bottom" id="mHn-b9-9VS"/>
+                                                <constraint firstItem="5wG-O9-hKH" firstAttribute="leading" secondItem="p19-hi-QvX" secondAttribute="leadingMargin" constant="2" id="rPZ-dl-Ybl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <connections>
+                                            <outlet property="ampm" destination="5wG-O9-hKH" id="Uv1-X2-Sso"/>
+                                            <outlet property="time" destination="VB4-yN-084" id="UbM-Uc-55h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="eBe-nT-o6w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VjC-pz-AIH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eBe-nT-o6w" secondAttribute="trailing" id="dRL-9q-COe"/>
+                            <constraint firstItem="eBe-nT-o6w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dyG-YK-2mm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eBe-nT-o6w" secondAttribute="bottom" id="gFW-lM-UX1"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="table" destination="eBe-nT-o6w" id="hJJ-Im-skl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-933.33333333333337" y="-78.348214285714278"/>
+        </scene>
+        <!--타이머-->
+        <scene sceneID="fTC-AM-0lF">
+            <objects>
+                <viewController id="50T-D3-EBL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92q-p9-YkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jiF-LO-cs9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="타이머" selectedImage="timer" catalog="system" id="8Za-dk-5qe"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttd-rO-xaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2627" y="1028"/>
+        </scene>
+        <!--스톱워치-->
+        <scene sceneID="OGp-eb-HB5">
+            <objects>
+                <viewController id="oqg-ts-6Tr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFf-Zt-JL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OqO-6e-0Lc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="스톱워치" selectedImage="stopwatch.fill" catalog="system" id="P3c-k0-C4z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aQ-zt-HJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1799" y="1027"/>
+        </scene>
+        <!--알람-->
+        <scene sceneID="xth-Zc-1fi">
+            <objects>
+                <viewController id="lRv-P7-qu4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9XQ-YL-uOv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zIj-U1-aFM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="알람" selectedImage="alarm.fill" catalog="system" id="4Aa-eY-D2Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYo-0h-YCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-908" y="620"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FVY-FQ-2dc">
+            <objects>
+                <tabBarController id="N61-5Z-FX9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="soS-oS-rdu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lRv-P7-qu4" kind="relationship" relationship="viewControllers" id="vFl-TN-mZE"/>
+                        <segue destination="oqg-ts-6Tr" kind="relationship" relationship="viewControllers" id="3vb-ty-BGU"/>
+                        <segue destination="50T-D3-EBL" kind="relationship" relationship="viewControllers" id="b3Q-ON-Kgp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afe-vQ-Jum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1798" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="124" height="128"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
