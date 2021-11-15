@@ -1,0 +1,6 @@
+framework module Pods_Week06_kde {
+  umbrella header "Pods-Week06-kde-umbrella.h"
+
+  export *
+  module * { export * }
+}
