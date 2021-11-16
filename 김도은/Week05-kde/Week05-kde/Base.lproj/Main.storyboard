@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yLW-kI-Uxp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U3p-pc-Yv3">
+            <objects>
+                <tabBarController id="yLW-kI-Uxp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JGF-l6-APJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="X55-FK-Abb" kind="relationship" relationship="viewControllers" id="pNO-AT-4pF"/>
+                        <segue destination="Gpy-da-m1y" kind="relationship" relationship="viewControllers" id="Cfh-Vd-ZN0"/>
+                        <segue destination="Kem-Hg-7DH" kind="relationship" relationship="viewControllers" id="vFh-Y0-55A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJk-xk-qnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="-1"/>
+        </scene>
+        <!--Animation-->
+        <scene sceneID="EyK-RB-RJz">
+            <objects>
+                <viewController id="X55-FK-Abb" customClass="ViewController" customModule="Week05_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ri-6U-RGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZXu-Jn-dGg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animation" id="S37-he-vZo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpx-tu-a0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="729"/>
+        </scene>
+        <!--Activity Indicator-->
+        <scene sceneID="sz0-0n-ec6">
+            <objects>
+                <viewController id="Gpy-da-m1y" customClass="ActivityController" customModule="Week05_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpz-oO-FpY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BO-DZ-PQW">
+                                <rect key="frame" x="86" y="622" width="50" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9BO-DZ-PQW" secondAttribute="height" multiplier="45:28" id="7ym-0Q-EJl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="시작"/>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="Gpy-da-m1y" eventType="touchUpInside" id="2aR-1Q-3co"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-iy-Kc8">
+                                <rect key="frame" x="279" y="623" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nLj-iy-Kc8" secondAttribute="height" multiplier="46:29" id="HbW-TM-y42"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="멈춤">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButtonClicked:" destination="Gpy-da-m1y" eventType="touchUpInside" id="Iu7-lF-GjC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MGS-fk-sFw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MGS-fk-sFw" firstAttribute="trailing" secondItem="nLj-iy-Kc8" secondAttribute="trailing" constant="86" id="G1e-Y5-Fhs"/>
+                            <constraint firstItem="9BO-DZ-PQW" firstAttribute="leading" secondItem="MGS-fk-sFw" secondAttribute="leading" constant="86" id="Klo-Rv-OA7"/>
+                            <constraint firstItem="MGS-fk-sFw" firstAttribute="bottom" secondItem="nLj-iy-Kc8" secondAttribute="bottom" constant="159" id="QRM-Ww-mPb"/>
+                            <constraint firstItem="MGS-fk-sFw" firstAttribute="bottom" secondItem="9BO-DZ-PQW" secondAttribute="bottom" constant="160" id="hLM-7R-42Q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Activity Indicator" id="RQ1-NU-Fve"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOx-0T-Rxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="728.57142857142856"/>
+        </scene>
+        <!--Lottie-->
+        <scene sceneID="vK5-1U-a2D">
+            <objects>
+                <viewController id="Kem-Hg-7DH" customClass="LottieController" customModule="Week05_kde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rKQ-y0-6LR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F4J-0i-ZAI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lottie" id="nKx-2c-QG8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYH-tg-dmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="729"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
